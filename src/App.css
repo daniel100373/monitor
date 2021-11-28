@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+
+
+@import "./styles/_nav.css";
+@import "./styles/_picture.css";
