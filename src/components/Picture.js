@@ -5,7 +5,7 @@ const Picture = ({ data, camera }) => {
     <div className="picture">
       <p>Camera{camera}</p>
       <div className="pictureContainer">
-        <img src={data.urls.full} alt="" />
+        <img src={data} alt="" />
       </div>
     </div>
   );
