@@ -2,6 +2,26 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Installing Node.js
+
+[Node.js](https://nodejs.org/en/download/).
+
+Choose LTS , suitable os and compatible bit for your os
+
+after installing, you can open cmd and implement the command below to check if installing is correct
+```console
+C:\Users\User>node --version
+v14.16.0
+
+C:\Users\User>
+```
+
+## Initialing
+
+
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
