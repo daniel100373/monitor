@@ -18,8 +18,16 @@ C:\Users\User>
 
 ## Initialing
 
+```console
+C:\Users\User>cd Desktop
 
+C:\Users\User\Desktop>git clone https://github.com/daniel100373/monitor.git
 
+cd pi_monitor/my-app
+
+npm install
+```
+then you can use `npm start` to executing the program
 
 
 ## Available Scripts
