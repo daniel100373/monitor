@@ -45,9 +45,10 @@ In the project directory, you can run:
 
 ### `nodemon app.js`
 only for web backend server.\
+Runs the server in the development mode.\
 Open on [http://localhost:4138](http://localhost:4138) 
 
-The page will reload if you make edits.\
+The server will reload if you make edits.\
 You will also see any lint errors in the console.
 
 ### `npm start` 
