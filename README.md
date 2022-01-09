@@ -44,14 +44,14 @@ in Homepage.js ip is for web server
 In the project directory, you can run:
 
 ### `nodemon app.js`
-only for web backend server
+only for web backend server.\
 Open on [http://localhost:4138](http://localhost:4138) 
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
 ### `npm start` 
-only for web frontend page
+only for web frontend page.\
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
