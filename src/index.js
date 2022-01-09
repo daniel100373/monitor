@@ -1,8 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
+
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
+<script src="https://kit.fontawesome.com/50614b92d8.js" crossorigin="anonymous"></script>;
 
 ReactDOM.render(
   <React.StrictMode>

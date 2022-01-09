@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 
 const Picture = ({ data, camera }) => {
   return (
     <div className="picture">
       <p>Camera{camera}</p>
       <div className="pictureContainer">
-        <img src={data} alt="" />
+        <img src={"data:image/jpg;base64," + data} alt="" />
       </div>
     </div>
   );

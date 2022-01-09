@@ -3,8 +3,9 @@ import useSWR from "swr";
 import Picture from "../components/Picture";
 
 const Homepage = () => {
-  const ACCESS_KEY = "PctaGARLc8v0vUVha6l5dAlkkKzmEYFq61f-JZxFYrg";
-  const initialUrl = `https://api.unsplash.com/photos/random?client_id=${ACCESS_KEY}&count=3`;
+  const ip = "192.168.97.167"; //wait to change to local ip
+
+  const [camera, setCamera] = useState(0);
   const search = async (url) => {
     const dataFetch = await fetch(url, {
       method: "GET",
@@ -16,10 +17,10 @@ const Homepage = () => {
     console.log(parsedData);
     return parsedData;
   };
-
+  const severUrl = `http://${ip}:4138/monitor`;
   function RefetchOnInterval() {
-    const { data } = useSWR(initialUrl, search, {
-      refreshInterval: 5000,
+    const { data } = useSWR(severUrl, search, {
+      refreshInterval: 100,
       //suspense: true,
     });
     //console.log(data);
@@ -28,7 +29,7 @@ const Homepage = () => {
         <div className="pictures">
           {data &&
             data.map((d, index) => {
-              return <Picture data={d.urls.full} camera={index + 1} />;
+              return <Picture data={d.img} camera={index + 1} />;
             })}
         </div>
       </div>
@@ -36,9 +37,7 @@ const Homepage = () => {
   }
   return (
     <div>
-      {/* <Suspense maxDuration={6000} fallback={<div style={{ color: "#fff" }}>Loading...</div>}> */}
       <RefetchOnInterval />
-      {/* </Suspense> */}
     </div>
   );
 };
