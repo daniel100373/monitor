@@ -29,6 +29,15 @@ npm install
 ```
 then you can use `npm start` to executing the program
 
+## File location 
+web frontend in branch main
+web backend in branch master
+
+## IP Setting
+
+in Event.js and EventPicture.js ip is for host ip of ai server
+in Homepage.js ip is for web server
+
 
 ## Available Scripts
 
